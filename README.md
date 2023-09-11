@@ -12,7 +12,7 @@ RUN adduser -h $FLASK_ROOT_DIRECTORY -s /bin/sh -D $FLASK_USER
  
 WORKDIR $FLASK_ROOT_DIRECTORY
  
-COPY ./project-directory/ .
+COPY . .
  
 RUN apk update && apk add python3 py3-pip --no-cache
  
